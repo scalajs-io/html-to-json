@@ -1,21 +1,23 @@
-Html-to-json API for Scala.js
+HtmlToJson API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [Html-to-json](https://www.npmjs.com/package/html-to-json)
+[html-to-json](https://www.npmjs.com/package/html-to-json) - Parses HTML strings into objects using flexible, composable filters.
+
+### Description
 
 Parses HTML strings into objects using flexible, composable filters.
 
-#### Build Dependencies
+### Build Dependencies
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +31,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.JSON
@@ -55,9 +57,9 @@ val linkParser = HtmlToJson.createParser(
 println(s"linkParser = ${JSON.stringify(linkParser)}")
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
-To add the Moment binding to your project, add the following to your build.sbt:  
+To add the `HtmlToJson` binding to your project, add the following to your build.sbt:  
 
 ```sbt
 libraryDependencies += "io.scalajs.npm" %%% "html-to-json" % "0.6.0"

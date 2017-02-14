@@ -1,6 +1,6 @@
 {
-  "name": "html-to-json-scalajs",
-  "version": "0.3.1",
+  "name": "html-to-json-sjs",
+  "version": "0.6.0",
   "private": true,
   "dependencies": {
     "html-to-json": "^0.6.0",
