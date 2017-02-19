@@ -4,7 +4,7 @@ package htmltojson
 import io.scalajs.JSON
 import io.scalajs.jquery.JQueryElement
 import io.scalajs.npm.htmltojson.HtmlToJsonTest.Content
-import io.scalajs.util.ScalaJsHelper._
+import io.scalajs.util.PromiseHelper._
 import org.scalatest.FunSpec
 
 import scala.language.existentials
