@@ -5,8 +5,8 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "0.6.0"
-val scalaJsIOVersion = "0.3.0.5"
+val apiVersion = "0.6.0-2"
+val scalaJsIOVersion = "0.3.0.6"
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/html-to-json"))
@@ -27,9 +27,9 @@ lazy val root = (project in file(".")).
       "org.scala-lang" % "scala-reflect" % scalaJsVersion,
       "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
       "io.scalajs" %%% "dom" % scalaJsIOVersion,
-      "io.scalajs" %%% "jquery" % scalaJsIOVersion,
+      "io.scalajs" %%% "jquery" % "3.1.1-2",
       "io.scalajs" %%% "nodejs" % scalaJsIOVersion,
-      "io.scalajs.npm" %%% "request" % "2.79.0"
+      "io.scalajs.npm" %%% "request" % "2.79.0-2"
     ))
 
 /////////////////////////////////////////////////////////////////////////////////
