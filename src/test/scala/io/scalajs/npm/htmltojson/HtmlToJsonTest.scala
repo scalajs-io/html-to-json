@@ -10,7 +10,7 @@ import org.scalatest.FunSpec
 import scala.language.existentials
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 
 /**
   * Html-to-Json Tests
@@ -112,7 +112,7 @@ class HtmlToJsonTest extends FunSpec {
   */
 object HtmlToJsonTest {
 
-  @ScalaJSDefined
+
   class Content(val text: String, val images: js.Object) extends js.Object
 
 }

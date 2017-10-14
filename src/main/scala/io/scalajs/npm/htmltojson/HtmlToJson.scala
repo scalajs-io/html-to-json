@@ -4,7 +4,6 @@ package htmltojson
 import io.scalajs.RawOptions
 import io.scalajs.nodejs.Error
 
-import scala.language.existentials
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
 import scala.scalajs.js.|

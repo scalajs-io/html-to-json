@@ -1,6 +1,6 @@
 {
   "name": "html-to-json-sjs",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "private": true,
   "dependencies": {
     "html-to-json": "^0.6.0",
