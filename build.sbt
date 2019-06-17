@@ -5,9 +5,9 @@ import sbt._
 
 import scala.language.postfixOps
 
-val scalaJsIOVersion = "0.4.2"
+val scalaJsIOVersion = "0.5.0"
 val apiVersion = scalaJsIOVersion
-val scalaJsVersion = "2.12.3"
+val scalaJsVersion = "2.12.8"
 
 homepage := Some(url("https://github.com/scalajs-io/html-to-json"))
 
@@ -21,13 +21,14 @@ lazy val root = (project in file(".")).
     scalaVersion := scalaJsVersion,
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:implicitConversions", "-Xlint"),
     scalacOptions in(Compile, doc) ++= Seq("-no-link-warnings"),
+    scalacOptions += "-P:scalajs:sjsDefinedByDefault",
     autoCompilerPlugins := true,
     scalaJSModuleKind := ModuleKind.CommonJSModule,
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaJsVersion,
       "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-      "io.scalajs" %%% "dom" % scalaJsIOVersion,
-      "io.scalajs" %%% "jquery" % "3.1.1-4",
+      "io.scalajs" %%% "dom-html" % scalaJsIOVersion,
+      "io.scalajs" %%% "jquery" % scalaJsIOVersion,
       "io.scalajs" %%% "nodejs" % scalaJsIOVersion,
       "io.scalajs.npm" %%% "request" % scalaJsIOVersion
     ))
